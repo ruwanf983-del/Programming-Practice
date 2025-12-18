@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<!-- Change multiple styles at once -->
+<button type="button" onclick="
+  let element = document.getElementById('demo');
+  element.style.fontSize = '30px';
+  element.style.color = 'blue';
+  element.style.backgroundColor = 'lightyellow';
+  element.innerHTML = 'Wow! Multiple changes applied!';
+">
+Change Multiple Things
+</button>
+
+<!-- Reset to original -->
+<button type="button" onclick="
+  let element = document.getElementById('demo');
+  element.style.fontSize = '16px';
+  element.style.color = 'black';
+  element.style.backgroundColor = 'transparent';
+  element.innerHTML = 'JavaScript can change the style of an HTML element.';
+">
+Reset
+</button>
+
+</body>
+</html>
